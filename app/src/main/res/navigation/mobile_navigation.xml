@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="my.edu.tarc.travel1.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_activity_register"
+            app:destination="@id/activity_register" />
+        <action
+            android:id="@+id/action_navigation_home_to_activity_login"
+            app:destination="@id/activity_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="my.edu.tarc.travel1.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="my.edu.tarc.travel1.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/activity_register"
+        android:name="my.edu.tarc.travel1.activity_register"
+        android:label="fragment_activity_register"
+        tools:layout="@layout/fragment_activity_register" />
+    <fragment
+        android:id="@+id/activity_login"
+        android:name="my.edu.tarc.travel1.activity_login"
+        android:label="fragment_activity_login"
+        tools:layout="@layout/fragment_activity_login" >
+        <action
+            android:id="@+id/action_activity_login_to_travelRec"
+            app:destination="@id/travelRec" />
+        <action
+            android:id="@+id/action_activity_login_to_activity_register"
+            app:destination="@id/activity_register" />
+    </fragment>
+    <fragment
+        android:id="@+id/travelRec"
+        android:name="my.edu.tarc.travel1.TravelRec"
+        android:label="fragment_travel_rec"
+        tools:layout="@layout/fragment_travel_rec" />
+    <fragment
+        android:id="@+id/result2"
+        android:name="my.edu.tarc.travel1.Result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/item_recommendation"
+        android:name="my.edu.tarc.travel1.item_recommendation"
+        android:label="fragment_item_recommendation"
+        tools:layout="@layout/fragment_item_recommendation" />
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="my.edu.tarc.travel1.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/adminProfile"
+        android:name="my.edu.tarc.travel1.AdminProfile"
+        android:label="fragment_admin_profile"
+        tools:layout="@layout/fragment_admin_profile" />
+    <fragment
+        android:id="@+id/item_hotel"
+        android:name="my.edu.tarc.travel1.item_hotel"
+        android:label="fragment_item_hotel"
+        tools:layout="@layout/fragment_item_hotel" />
+    <fragment
+        android:id="@+id/item_restaurant"
+        android:name="my.edu.tarc.travel1.item_restaurant"
+        android:label="fragment_item_restaurant"
+        tools:layout="@layout/fragment_item_restaurant" />
+    <fragment
+        android:id="@+id/item_attraction"
+        android:name="my.edu.tarc.travel1.item_attraction"
+        android:label="fragment_item_attraction"
+        tools:layout="@layout/fragment_item_attraction" />
+    <fragment
+        android:id="@+id/history"
+        android:name="my.edu.tarc.travel1.History"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/item_travel"
+        android:name="my.edu.tarc.travel1.item_travel"
+        android:label="fragment_item_travel"
+        tools:layout="@layout/fragment_item_travel" />
+</navigation>

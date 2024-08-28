@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "593262122639",
+    "firebase_url": "https://travel1-42d9a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "travel1-42d9a",
+    "storage_bucket": "travel1-42d9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593262122639:android:dac527a3bdbf133d0d82fa",
+        "android_client_info": {
+          "package_name": "my.edu.tarc.travel1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtWOLjtUNPO-q7NgyDs8DO4Ex6T9-BBG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

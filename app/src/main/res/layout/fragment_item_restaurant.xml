@@ -1,0 +1,146 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="restaurant"
+            type="my.edu.tarc.travel1.restaurant.Restaurant" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        android:layout_marginBottom="8dp">
+
+        <!-- Restaurant Name -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text" />
+
+        <!-- Price Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Price"
+                android:src="@drawable/ic_price_tag"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Rating Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Rating"
+                android:src="@drawable/ic_star"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Cuisines Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Cuisines"
+                android:src="@drawable/ic_restaurant"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewCuisines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Website Section with Link -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Cuisines"
+            android:src="@drawable/ic_website"
+            app:tint="@color/purple_200" />
+
+        <TextView
+            android:id="@+id/textViewWebUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autoLink="web"
+            android:textColor="@color/secondary_text"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+        <!-- Buttons for Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                app:cornerRadius="8dp"
+                android:backgroundTint="?attr/colorAccent"
+                android:textColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                app:cornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="?attr/colorAccent"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

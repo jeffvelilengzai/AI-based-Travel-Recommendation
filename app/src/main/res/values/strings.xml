@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">travel1</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="destination_array">
+        <item>Penang</item>
+        <item>Melaka</item>
+        <item>Ipoh</item>
+    </string-array>
+    <string name="destination_prompt">Select Destination</string>
+    <string-array name="cuisines_array">
+        <item>Asian</item>
+        <item>Malaysian</item>
+        <item>Chinese</item>
+        <item>Cafe</item>
+        <item>Seafood</item>
+        <item>Fusion</item>
+        <item>European</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Thai</item>
+        <item>Bar</item>
+        <item>Grill</item>
+    </string-array>
+    <string-array name="subcategories_array">
+        <item>Sights &amp; Landmarks</item>
+        <item>Museums</item>
+        <item>Shopping</item>
+        <item>Zoos &amp; Aquariums</item>
+        <item>Nature &amp; Parks</item>
+    </string-array>
+    <string name="cuisines_prompt">Select Cuisines</string>
+    <string name="subcategories_prompt">Select Subcategories</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+</resources>

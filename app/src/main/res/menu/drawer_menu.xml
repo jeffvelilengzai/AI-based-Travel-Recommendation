@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_travel"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Go Travel" />
+
+    <item
+        android:id="@+id/nav_travel_history"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Travel History" />
+
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Generate Report" />
+
+    <item
+        android:id="@+id/nav_manage_user"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Manage User" />
+
+    <item
+    android:id="@+id/nav_logout"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:title="Logout" />
+
+</menu>

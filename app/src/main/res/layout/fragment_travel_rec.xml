@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".TravelRec">
+
+    <!-- Start Date Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="Start Date:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Start Date"
+                app:backgroundTint="?attr/colorAccent"
+                style="@style/Widget.MaterialComponents.Button" />
+
+            <TextView
+                android:id="@+id/textViewStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Selected Start Date: None"
+                android:textColor="@color/ice_cold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- End Date Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="End Date:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select End Date"
+                app:backgroundTint="?attr/colorAccent"
+                style="@style/Widget.MaterialComponents.Button" />
+
+            <TextView
+                android:id="@+id/textViewEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Selected End Date: None"
+                android:textColor="@color/ice_cold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Destination Spinner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="Destination:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Destination">
+
+            <Spinner
+                android:id="@+id/spinnerDestination"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:entries="@array/destination_array"
+                android:prompt="@string/destination_prompt" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Budget Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="Budget(RM):"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Budget">
+
+            <EditText
+                android:id="@+id/editTextBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Cuisines Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="Cuisines:\n(Must select at least 3)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSelectCuisine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Select Cuisines"
+            app:backgroundTint="?attr/colorAccent"
+            style="@style/Widget.MaterialComponents.Button" />
+    </LinearLayout>
+
+
+    <!-- Display Cuisines -->
+    <TextView
+        android:id="@+id/textViewCuisine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Preferred Cuisines: None"
+        android:textColor="@color/ice_cold" />
+
+    <!-- Subcategories Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="Subcategories:\n(Must select at least 3)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSelectSubcategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Select Subcategories"
+            app:backgroundTint="?attr/colorAccent"
+            style="@style/Widget.MaterialComponents.Button" />
+    </LinearLayout>
+
+
+    <!-- Display Subcategories -->
+    <TextView
+        android:id="@+id/textViewSubcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Preferred Subcategories: None"
+        android:textColor="@color/ice_cold" />
+
+    <!-- Generate Recommendations Button -->
+
+    <!-- Recommendations Display -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonGenerate"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
+        android:layout_marginTop="24dp"
+        android:text="Generate Recommendations"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/ic_generate_recommendations" />
+
+    <TextView
+        android:id="@+id/textViewRecommendations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

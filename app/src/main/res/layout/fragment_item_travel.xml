@@ -1,0 +1,60 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="travelRecord"
+            type="my.edu.tarc.travel1.TravelRecord" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{travelRecord.travelSelection.startDate}"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewStartDate"
+            android:text="@{travelRecord.travelSelection.endDate}"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEndDate"
+            android:text="@{travelRecord.travelSelection.budget}"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBudget"
+            android:text="@{travelRecord.travelSelection.destination}"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewCuisines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDestination"
+            android:text="@{travelRecord.travelSelection.formattedCuisines}"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewSubcategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCuisines"
+            android:text="@{travelRecord.travelSelection.formattedSubcategories}"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</layout>

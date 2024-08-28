@@ -1,0 +1,190 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="hotel"
+            type="my.edu.tarc.travel1.hotel.Hotel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_background"
+        android:layout_marginBottom="8dp">
+
+        <!-- Hotel Name -->
+        <TextView
+            android:id="@+id/textViewHotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text" />
+
+        <!-- Price Per Night Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Price Per Night"
+                android:src="@drawable/ic_price_tag"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewHotelPricePerNight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Total Price Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Total Price"
+                android:src="@drawable/ic_price_tag"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewHotelTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Rating Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Rating"
+                android:src="@drawable/ic_star"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewHotelRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Website Section with Link -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Rating"
+            android:src="@drawable/ic_website"
+            app:tint="@color/purple_200" />
+
+        <TextView
+            android:id="@+id/textViewHotelWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autoLink="web"
+            android:textColor="@color/secondary_text"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+        <!-- Check-in/Check-out Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Check-in/Check-out"
+                android:src="@drawable/ic_in_out"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewHotelCheckinCheckout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Amenities Section with Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="match_parent"
+                android:contentDescription="Amenities"
+                android:src="@drawable/ic_amenities"
+                app:tint="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/textViewHotelAmenities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Buttons for Actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                app:cornerRadius="8dp"
+                android:backgroundTint="?attr/colorAccent"
+                android:textColor="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                app:cornerRadius="8dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="?attr/colorAccent"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

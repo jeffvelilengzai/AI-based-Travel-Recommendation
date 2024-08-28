@@ -1,0 +1,39 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <!-- Add any data binding variables here if needed -->
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/destinationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/destinationSpinner"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/generateReportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeSpinner"
+            android:layout_marginTop="28dp"
+            android:text="Generate Report" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/generateReportButton"
+            android:layout_marginTop="28dp"/>
+
+    </RelativeLayout>
+</layout>
